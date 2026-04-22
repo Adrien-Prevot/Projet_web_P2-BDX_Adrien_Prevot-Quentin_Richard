@@ -1,17 +1,125 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Accueil L'Amas Zone </title>
-    </head>
-    <body>
-        <header>
-            <img src="img.png" alt = "logo de l'Amas Zone " width = "300" height = "200">
-        </header>
-        <footer>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'AMAS ZONE - Le leader de l'occasion cassée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        </footer>
-    </body>
+<header id="main-header">
+    <div class="header-left">
+        <a href="index.html">
+            <img src="" alt="Logo L'AMAS ZONE" class="site-logo">
+        </a>
+
+        <div class="delivery-location">
+            <span>Bonjour</span>
+            <p>Choisir le lieu de livraison</p>
+        </div>
+    </div>
+
+    <div class="header-center">
+        <form class="search-form">
+            <input type="text" placeholder="Rechercher une épave..." id="search-input">
+            <button type="submit" id="search-button">
+                Rechercher
+            </button>
+        </form>
+    </div>
+
+    <div class="header-right">
+        <div class="user-auth">
+            <span>Bonjour</span>
+            <p>Header Auth</p>
+        </div>
+
+        <a href="contact.html" class="contact-link">Nous contacter</a>
+
+        <img src="" alt="Logo EFREI" class="school-logo">
+    </div>
+</header>
+
+<nav id="sub-nav">
+    <button id="menu-toggle">
+        <span>☰</span> Tout voir
+    </button>
+    <ul class="nav-categories">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+</nav>
+
+<main id="homepage-content">
+
+    <section class="product-grid">
+
+        <article class="product-card">
+            <div class="product-image-container">
+                <img src="" alt="Maison abandonnée style 1940" class="product-img">
+            </div>
+            <div class="product-info">
+                <h3>Maison abandonnée</h3>
+                <p class="price">1000 $</p>
+                <p class="description">Maison très belle plus utilisé depuis près de 40 ans.</p>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image-container">
+                <img src="" alt="Placeholder pour titre" class="product-img">
+            </div>
+            <div class="product-info">
+                <h3>Title</h3>
+                <p class="price">Prix $</p>
+                <p class="description">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes.</p>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image-container">
+                <img src="" alt="Placeholder pour titre" class="product-img">
+            </div>
+            <div class="product-info">
+                <h3>Title</h3>
+                <p class="price">Prix $</p>
+                <p class="description">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes.</p>
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+<footer id="main-footer">
+
+    <nav class="pagination">
+        <a href="#" class="prev-page">← Previous</a>
+        <ul class="page-numbers">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="dots">...</li>
+            <li><a href="#">67</a></li>
+            <li><a href="#">68</a></li>
+        </ul>
+        <a href="#" class="next-page">Next →</a>
+    </nav>
+
+    <div class="social-links">
+        <a href="#"><img src="" alt="Twitter X" class="social-icon"></a>
+        <a href="#"><img src="" alt="Instagram" class="social-icon"></a>
+        <a href="#"><img src="" alt="YouTube" class="social-icon"></a>
+        <a href="#"><img src="" alt="LinkedIn" class="social-icon"></a>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
