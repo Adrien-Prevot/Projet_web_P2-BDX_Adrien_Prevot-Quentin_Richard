@@ -8,104 +8,111 @@
 </head>
 <body>
 
-<div id="side-menu">
-    <div class="side-menu-header">
-        <h3>Catégories</h3>
-        <button id="close-menu">X</button>
-    </div>
-    <ul class="side-menu-list">
-        <li><a href="#">Immobilier en ruines</a></li>
-        <li><a href="#">Véhicules (sans roues)</a></li>
-        <li><a href="#">Électronique explosée</a></li>
-        <li><a href="#">Objets non identifiés</a></li>
-    </ul>
-</div>
-
 <header id="main-header">
     <div class="header-left">
-        <img src="../images/logo.png" alt="Logo L'AMAS ZONE" width="200">
-
-        <a href="#" class="delivery-link">
-            <div class="delivery-location">
-                <span>Bonjour</span>
-                <p>Choisir le lieu de livraison</p>
-            </div>
-        </a>
+        <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="main-logo">
+        <div class="delivery-location">
+            <img src="../images/location-icon.png" alt="" class="icon">
+            <span>choisir le lieu de livraison</span>
+        </div>
     </div>
 
     <div class="header-center">
         <form class="search-form">
-            <input type="text" placeholder="Rechercher une épave..." id="search-input">
-            <button type="submit" id="search-button">Rechercher</button>
+            <input type="text" placeholder="Search" id="search-input">
+            <button type="submit" id="search-button">
+                <img src="../images/mic-icon.png" alt="Voice search">
+            </button>
         </form>
     </div>
 
     <div class="header-right">
         <div class="user-auth">
-            <span>Bonjour</span>
-            <p>Mon Compte</p>
+            <p>Bonjour</p>
+            <span>Header Auth</span>
         </div>
-        <a href="contact.html" class="contact-link">Nous contacter</a>
-        <img src="../images/efreiLogo.png" alt="Logo EFREI" class="school-logo" width="80">
+        <a href="contact.html" class="contact-btn">Nous contacter</a>
+        <img src="../images/efreiLogo.png" alt="Logo EFREI" class="school-logo">
     </div>
 </header>
 
 <nav id="sub-nav">
-    <button id="menu-toggle"><span>☰</span> Tout voir</button>
-    <ul class="nav-categories">
-        <li><a href="#">Meilleures Ventes</a></li>
-        <li><a href="#">Épaves du jour</a></li>
-        <li><a href="#">Vendre un truc moche</a></li>
-        <li><a href="#">Amas Prime</a></li>
-    </ul>
+    <button id="menu-toggle">
+        <span class="hamburger">☰</span> Tout voir
+    </button>
+    <div class="nav-scroll-container">
+        <ul class="nav-categories">
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+        <button class="nav-next">></button>
+    </div>
 </nav>
 
 <main id="homepage-content">
     <section class="product-grid">
-        <a href="#" class="product-link">
-            <article class="product-card">
-                <div class="product-image-placeholder">
-                    <img src="" alt="Maison" class="product-img">
-                </div>
+        <article class="product-card">
+            <div class="product-image">
+                <img src="../images/MaisonAbandonneeStyle1940.png" alt="Maison abandonnée">
+            </div>
+            <div class="product-info">
                 <h3>Maison abandonnée</h3>
                 <p class="price">1000 $</p>
-                <p class="description">Plus utilisée depuis 40 ans.</p>
-            </article>
-        </a>
+                <p class="description">Maison très belle plus utilisé depuis près de 40 ans.</p>
+            </div>
+        </article>
 
-        <a href="#" class="product-link">
-            <article class="product-card">
-                <div class="product-image-placeholder"></div>
-                <h3>Vélo "Conceptuel"</h3>
-                <p class="price">15 $</p>
-                <p class="description">Vendu sans cadre ni roues.</p>
-            </article>
-        </a>
+        <article class="product-card">
+            <div class="product-image">
+                <img src="../images/VeloRoueSelle.png" alt="Vélo sans cadre">
+            </div>
+            <div class="product-info">
+                <h3>Vélo sans cadre</h3>
+                <p class="price">50 $</p>
+                <p class="description">Pour du recyclage et une jolie déco</p>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image">
+                <img src="../images/BottesTrouees.png" alt="Bottes Trouées">
+            </div>
+            <div class="product-info">
+                <h3>Crocs allongé</h3>
+                <p class="price">25 $</p>
+                <p class="description">Pour du recyclage et de jolie crocs</p>
+            </div>
+        </article>
+
     </section>
 </main>
 
 <footer id="main-footer">
+    <div class="footer-container">
+        <nav class="pagination">
+            <a href="#" class="prev-page">← Previous</a>
+            <ul class="page-numbers">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="dots">...</li>
+                <li><a href="#">67</a></li>
+                <li><a href="#">68</a></li>
+            </ul>
+            <a href="#" class="next-page">Next →</a>
+        </nav>
 
-    <nav class="pagination">
-        <a href="#" class="prev-page">← Previous</a>
-        <ul class="page-numbers">
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li class="dots">...</li>
-            <li><a href="#">67</a></li>
-            <li><a href="#">68</a></li>
-        </ul>
-        <a href="#" class="next-page">Next →</a>
-    </nav>
-
-    <div class="social-links">
-        <a href="https://twitter.com"><img src="../images/twitter.png" alt="Twitter X" class="social-icon" height="100"></a>
-        <a href="https://instagram.com"><img src="../images/instagram.png" alt="Instagram" class="social-icon" height="100"></a>
-        <a href="https://youtube.com"><img src="../images/youtube.png" alt="YouTube" class="social-icon" height="100"></a>
-        <a href="https://linkedin.com"><img src="../images/linkedin.png" alt="LinkedIn" class="social-icon" height="100"></a>
+        <div class="social-links">
+            <a href="#"><img src="../images/twitter.png" alt="X"></a>
+            <a href="#"><img src="../images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../images/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+        </div>
     </div>
-
 </footer>
 
 <script src="script.js"></script>
