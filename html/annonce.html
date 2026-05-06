@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail de l'annonce - L'AMAS ZONE</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header id="main-header">
+    <div class="header-left">
+        <a href="page_accueil.html">
+            <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="main-logo">
+        </a>
+    </div>
+
+    <div class="header-center">
+        <form class="search-form">
+            <input type="text" placeholder="Rechercher" id="search-input">
+            <button type="submit" id="search-button">
+                <img src="../images/boutton%20rechercher.png" alt="recherche" height="30px" width="40px" class="recherche">
+            </button>
+        </form>
+    </div>
+
+    <div class="header-right">
+        <div class="user-auth"><p>Bonjour</p></div>
+        <a href="faq.html" class="delivery-location" style="text-decoration: none; color: inherit; margin-right: 15px;">
+            <img src="../images/faq.png" alt="" class="icon" width="20px" style="filter: invert(0.5);">
+            <span>FAQ</span>
+        </a>
+        <a href="contact.html" class="contact-btn">Nous contacter</a>
+        <img src="../images/efreiLogo.png" alt="Logo EFREI" class="school-logo">
+    </div>
+</header>
+
+<nav id="sub-nav">
+    <button id="menu-toggle">☰ Tout voir</button>
+    <div class="nav-scroll-container">
+        <ul class="nav-categories">
+            <li><a href="#">Immobilier</a></li>
+            <li><a href="#">Décoration</a></li>
+            <li><a href="#">Mode</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Bricolage</a></li>
+            <li><a href="#">High-Tech</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main id="homepage-content" style="display: flex; flex-direction: column; align-items: center; padding: 60px 40px;">
+    <article class="product-card" style="max-width: 600px; width: 100%; border: none;">
+
+        <h1 id="titre-annonce" style="font-size: 2rem; margin-bottom: 20px; text-align: center;">Chargement...</h1>
+
+        <div class="product-image" style="height: auto; max-height: 400px; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
+            <img id="image-annonce" src="" alt="" style="display: none; width: 100%; object-fit: cover;">
+        </div>
+
+        <div class="product-info" style="padding: 0;">
+            <p id="prix-annonce" class="price" style="font-size: 1.5rem;"></p>
+            <p id="description-annonce" class="description" style="font-size: 1.1rem; margin-top: 15px;"></p>
+
+            <div style="margin-top: 40px; text-align: center;">
+                <a href="page_accueil.html" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.1rem; padding: 10px 20px; border: 2px solid #333; border-radius: 5px; display: inline-block;">
+                    &#8592; Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </article>
+</main>
+
+<footer id="main-footer">
+    <div class="footer-container">
+        <nav class="footer-nav">
+            <a href="a_propos.html" class="footer-link">À propos de nous</a>
+        </nav>
+        <div class="social-links">
+            <a href="https://twitter.com"><img src="../images/twitter.png" alt="X"></a>
+            <a href="https://instagram.com"><img src="../images/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="../images/youtube.png" alt="YouTube"></a>
+            <a href="https://linkedin.com"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get('id');
+
+    if (articleId) {
+        fetch('../json/articles.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Erreur");
+                return response.json();
+            })
+            .then(articles => {
+                const articleChoisi = articles.find(article => article.id == articleId);
+
+                if (articleChoisi) {
+                    document.getElementById('titre-annonce').textContent = articleChoisi.titre;
+                    document.getElementById('prix-annonce').textContent = articleChoisi.prix;
+                    document.getElementById('description-annonce').textContent = articleChoisi.description;
+
+                    const imgElement = document.getElementById('image-annonce');
+                    imgElement.src = articleChoisi.image;
+                    imgElement.alt = articleChoisi.titre;
+                    imgElement.style.display = 'block';
+                } else {
+                    document.getElementById('titre-annonce').textContent = "Annonce introuvable.";
+                }
+            })
+            .catch(() => {
+                document.getElementById('titre-annonce').textContent = "Erreur de chargement.";
+            });
+    } else {
+        document.getElementById('titre-annonce').textContent = "Aucun article sélectionné.";
+    }
+</script>
+</body>
+</html>
