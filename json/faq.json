@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Quels types d'objets vendez-vous ?",
+    "answer": "Nous vendons exclusivement des objets de 'l'occasion cassée' : des maisons hantées, des vélos sans cadres, et des bottes trouées ! Tout ce dont personne ne veut, nous l'avons."
+  },
+  {
+    "question": "Comment se passe la livraison ?",
+    "answer": "La livraison est effectuée par pigeon voyageur ou par lancer de colis aléatoire."
+  },
+  {
+    "question": "Puis-je retourner un article ?",
+    "answer": "Absolument pas ! Nos articles sont déjà cassés à l'arrivée. Si vous n'êtes pas satisfait de la dégradation, c'est que vous n'avez pas compris le concept !"
+  },
+  {
+    "question": "Qui a créé ce site ?",
+    "answer": "Ce site a été créé par Adrien Prevot et Quentin Richard dans le cadre d'un projet EFREI."
+  }
+]
