@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatContent = document.getElementById('chat-content');
     const questionList = document.getElementById('question-list');
 
-    // Chargement des questions depuis le fichier JSON
     fetch('../json/faq.json')
         .then(response => response.json())
         .then(data => {
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         messageDiv.textContent = text;
         chatContent.appendChild(messageDiv);
 
-        // Scroll automatique vers le bas
         chatContent.scrollTop = chatContent.scrollHeight;
     }
 });
