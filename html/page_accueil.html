@@ -10,11 +10,9 @@
 
 <header id="main-header">
     <div class="header-left">
-        <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="main-logo">
-        <div class="delivery-location">
-            <img src="../images/location-icon.png" alt="" class="icon">
-            <span>choisir le lieu de livraison</span>
-        </div>
+        <a href="page_accueil.html">
+            <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="main-logo">
+        </a>
     </div>
 
     <div class="header-center">
@@ -27,28 +25,27 @@
     </div>
 
     <div class="header-right">
-        <div class="user-auth">
-            <p>Bonjour</p>
-        </div>
+        <div class="user-auth"><p>Bonjour</p></div>
+        <a href="faq.html" class="delivery-location" style="text-decoration: none; color: inherit; margin-right: 15px;">
+            <img src="../images/faq.png" alt="" class="icon" width="20px" style="filter: invert(0.5);">
+            <span>FAQ</span>
+        </a>
         <a href="contact.html" class="contact-btn">Nous contacter</a>
         <img src="../images/efreiLogo.png" alt="Logo EFREI" class="school-logo">
     </div>
 </header>
 
 <nav id="sub-nav">
-    <button id="menu-toggle">
-        <span class="hamburger">☰</span> Tout voir
-    </button>
+    <button id="menu-toggle">☰ Tout voir</button>
     <div class="nav-scroll-container">
         <ul class="nav-categories">
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
+            <li><a href="#">Immobilier</a></li>
+            <li><a href="#">Décoration</a></li>
+            <li><a href="#">Mode</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Bricolage</a></li>
+            <li><a href="#">High-Tech</a></li>
         </ul>
-        <button class="nav-next">></button>
     </div>
 </nav>
 
@@ -61,7 +58,7 @@
             <div class="product-info">
                 <h3>Maison abandonnée</h3>
                 <p class="price">1000 $</p>
-                <p class="description">Maison très belle plus utilisé depuis près de 40 ans.</p>
+                <p class="description">Maison très belle plus utilisée depuis près de 40 ans.</p>
             </div>
         </article>
 
@@ -72,7 +69,7 @@
             <div class="product-info">
                 <h3>Vélo sans cadre</h3>
                 <p class="price">50 $</p>
-                <p class="description">Pour du recyclage et une jolie déco</p>
+                <p class="description">Pour du recyclage et une jolie déco.</p>
             </div>
         </article>
 
@@ -83,37 +80,35 @@
             <div class="product-info">
                 <h3>Crocs allongé</h3>
                 <p class="price">25 $</p>
-                <p class="description">Pour du recyclage et de jolie crocs</p>
+                <p class="description">Pour du recyclage et de jolies crocs.</p>
             </div>
         </article>
-
     </section>
 </main>
 
 <footer id="main-footer">
     <div class="footer-container">
+        <nav class="footer-nav">
+            <a href="a_propos.html" class="footer-link">À propos de nous</a>
+        </nav>
         <nav class="pagination">
             <a href="#" class="prev-page">← Previous</a>
             <ul class="page-numbers">
                 <li class="active"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
-                <li class="dots">...</li>
-                <li><a href="#">67</a></li>
-                <li><a href="#">68</a></li>
             </ul>
             <a href="#" class="next-page">Next →</a>
         </nav>
-
         <div class="social-links">
-            <a href="#"><img src="../images/twitter.png" alt="X"></a>
-            <a href="#"><img src="../images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="../images/youtube.png" alt="YouTube"></a>
-            <a href="#"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com"><img src="../images/twitter.png" alt="X"></a>
+            <a href="https://instagram.com"><img src="../images/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="../images/youtube.png" alt="YouTube"></a>
+            <a href="https://linkedin.com"><img src="../images/linkedin.png" alt="LinkedIn"></a>
         </div>
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
