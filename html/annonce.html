@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Détail de l'annonce - L'AMAS ZONE</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/annonce.js"></script>
 </head>
 <body>
 
@@ -49,26 +50,19 @@
     </div>
 </nav>
 
-<main id="homepage-content" style="display: flex; flex-direction: column; align-items: center; padding: 60px 40px;">
-    <article class="product-card" style="max-width: 600px; width: 100%; border: none;">
-
-        <h1 id="titre-annonce" style="font-size: 2rem; margin-bottom: 20px; text-align: center;">Chargement...</h1>
-
-        <div class="product-image" style="height: auto; max-height: 400px; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
-            <img id="image-annonce" src="" alt="" style="display: none; width: 100%; object-fit: cover;">
-        </div>
-
-        <div class="product-info" style="padding: 0;">
-            <p id="prix-annonce" class="price" style="font-size: 1.5rem;"></p>
-            <p id="description-annonce" class="description" style="font-size: 1.1rem; margin-top: 15px;"></p>
-
-            <div style="margin-top: 40px; text-align: center;">
-                <a href="page_accueil.html" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.1rem; padding: 10px 20px; border: 2px solid #333; border-radius: 5px; display: inline-block;">
-                    &#8592; Retour à l'accueil
-                </a>
+<main id="homepage-content">
+    <section class="product-grid">
+        <article class="product-card">
+            <div class="product-image">
+                <img id="image-annonce" src="" alt="Image de l'annonce" style="display: none;">
             </div>
-        </div>
-    </article>
+            <div class="product-info">
+                <h3 id="titre-annonce">Chargement...</h3>
+                <p id="prix-annonce" class="price"></p>
+                <p id="description-annonce" class="description"></p>
+            </div>
+        </article>
+    </section>
 </main>
 
 <footer id="main-footer">
@@ -85,38 +79,5 @@
     </div>
 </footer>
 
-<script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const articleId = urlParams.get('id');
-
-    if (articleId) {
-        fetch('../json/articles.json')
-            .then(response => {
-                if (!response.ok) throw new Error("Erreur");
-                return response.json();
-            })
-            .then(articles => {
-                const articleChoisi = articles.find(article => article.id == articleId);
-
-                if (articleChoisi) {
-                    document.getElementById('titre-annonce').textContent = articleChoisi.titre;
-                    document.getElementById('prix-annonce').textContent = articleChoisi.prix;
-                    document.getElementById('description-annonce').textContent = articleChoisi.description;
-
-                    const imgElement = document.getElementById('image-annonce');
-                    imgElement.src = articleChoisi.image;
-                    imgElement.alt = articleChoisi.titre;
-                    imgElement.style.display = 'block';
-                } else {
-                    document.getElementById('titre-annonce').textContent = "Annonce introuvable.";
-                }
-            })
-            .catch(() => {
-                document.getElementById('titre-annonce').textContent = "Erreur de chargement.";
-            });
-    } else {
-        document.getElementById('titre-annonce').textContent = "Aucun article sélectionné.";
-    }
-</script>
 </body>
 </html>
