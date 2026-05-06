@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "titre": "Maison abandonnée",
+    "prix": "1000 $",
+    "description": "Maison très belle plus utilisée depuis près de 40 ans. Idéale pour les amateurs d'urbex ou les passionnés de rénovation extrême. Cette bâtisse chargée d'histoire offre un potentiel incroyable avec ses murs recouverts de lierre et ses grandes pièces figées dans le temps. Prévoir quelques travaux de toiture et un bon coup de balai, mais le charme de l'ancien est garanti !",
+    "image": "../images/MaisonAbandonneeStyle1940.png"
+  },
+  {
+    "id": 2,
+    "titre": "Vélo sans cadre",
+    "prix": "50 $",
+    "description": "Pour du recyclage et une jolie déco. Ce vélo a perdu son cadre au fil de ses aventures, mais ses deux roues et sa selle en cuir véritable racontent encore de magnifiques balades. Parfait pour être transformé en tabouret de bar industriel, en luminaire original ou simplement exposé comme une œuvre d'art contemporain dans un loft urbain.",
+    "image": "../images/VeloRoueSelle.png"
+  },
+  {
+    "id": 3,
+    "titre": "Crocs allongé",
+    "prix": "25 $",
+    "description": "Pour du recyclage et de jolies crocs. Une paire de chaussures au design avant-gardiste qui a subi une élongation inexpliquée sous l'effet du soleil ou d'un sortilège. Elles ne sont plus vraiment portables en l'état, mais elles feront des pots de fleurs incroyablement originaux pour votre jardin ou votre balcon. Attirez tous les regards avec cette pièce unique !",
+    "image": "../images/BottesTrouees.png"
+  },
+  {
+    "id": 4,
+    "titre": "Chaise à trois pieds",
+    "prix": "15 $",
+    "description": "Idéale pour un projet de bricolage ou pour tester votre sens de l'équilibre. Cette magnifique chaise en bois massif a tragiquement perdu l'une de ses pattes lors d'un déménagement tumultueux. Elle n'attend plus qu'un esprit créatif pour lui redonner vie : transformez-la en table de chevet asymétrique, en étagère d'angle ou relevez le défi de lui sculpter un nouveau pied sur mesure.",
+    "image": "../images/ChaiseTroisPieds.png"
+  },
+  {
+    "id": 5,
+    "titre": "Ordinateur des années 90",
+    "prix": "80 $",
+    "description": "Ne s'allume plus, mais parfait pour une collection vintage ou un musée personnel. Cet engin au design carré et au plastique jauni est un véritable voyage dans les années 90. Son clavier à touches mécaniques fait un bruit particulièrement satisfaisant. Une pièce de choix pour décorer un bureau de geek nostalgique ou pour servir d'accessoire dans un court-métrage rétro.",
+    "image": "../images/OrdiVintage.png"
+  },
+  {
+    "id": 6,
+    "titre": "Livre sans pages",
+    "prix": "5 $",
+    "description": "Une belle couverture ancienne en cuir véritable, parfaite pour cacher vos petits secrets dans une bibliothèque. Toutes les pages ont été soigneusement retirées, laissant un écrin vide à l'odeur de vieux papier. Utilisez-le comme boîte cachette discrète pour vos objets de valeur, comme support pour une création artistique, ou simplement pour donner un cachet mystérieux à votre étagère.",
+    "image": "../images/LivreVide.png"
+  },
+  {
+    "id": 7,
+    "titre": "Montre sans aiguilles",
+    "prix": "40 $",
+    "description": "Pour ceux qui ont décidé de ne plus jamais être stressés par le temps qui passe. Cette montre à gousset au cadran élégant et au boîtier cuivré a perdu ses aiguilles dans une faille spatio-temporelle. Portez-la comme un bijou philosophique rappelant l'importance de vivre l'instant présent, ou utilisez son mécanisme apparent pour sublimer vos propres créations steampunk.",
+    "image": "../images/MontreCassee.png"
+  },
+  {
+    "id": 8,
+    "titre": "Parapluie troué",
+    "prix": "10 $",
+    "description": "Laisse passer la pluie, mais avec style. Un concept artistique totalement assumé. Ce grand parapluie noir possède une toile magnifiquement déchirée sur l'un de ses pans. S'il ne vous protège plus vraiment des averses imprévues, il fera une ombrelle d'intérieur au look gothique sensationnelle ou un accessoire de mode très pointu pour vos séances photos.",
+    "image": "../images/ParapluieTroue.png"
+  },
+  {
+    "id": 9,
+    "titre": "Télévision cathodique",
+    "prix": "60 $",
+    "description": "Très lourde, peut servir de table basse extrêmement robuste ou de décoration rétro. Ce téléviseur imposant vous rappellera l'époque bénie de la VHS et des cassettes vidéo. L'écran bombé ne diffuse plus que de la neige, mais la coque est intacte. Les plus bricoleurs pourront la vider complètement pour en faire un panier pour chat ultra-stylé ou un aquarium au look résolument vintage.",
+    "image": "../images/TeleCathodique.png"
+  }
+]
