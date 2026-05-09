@@ -1,5 +1,6 @@
 /* Variables et Base */
 :root {
+    /* les var pr le style apple (couleurs griss/blanc tres clean) */
     --fondPrincipal: #ffffff;
     --fondSecondaire: #f5f5f7;
     --textePrincipal: #1d1d1f;
@@ -17,6 +18,7 @@
 }
 
 body {
+    /* on force la typo officiel d'apple direct */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--fondPrincipal);
     color: var(--textePrincipal);
@@ -29,6 +31,7 @@ a {
 
 /* Header */
 #entetePrincipal {
+    /* le header en flex pr tout aligner */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,7 +93,7 @@ a {
 
 #iconeFaq {
     width: 20px;
-    filter: invert(0.5);
+    filter: invert(0.5); /* ptit hack pr la couleur de l'icone */
 }
 
 .boutonContact {
@@ -167,6 +170,7 @@ a {
 }
 
 .carteProduit:hover {
+    /* petit effet smooth quand on passe la souri */
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
@@ -177,6 +181,7 @@ a {
 }
 
 .imageProduit img {
+    /* on evite que l'image soit deformé */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -379,6 +384,7 @@ a {
 }
 
 .groupeFormulaire input:focus, .groupeFormulaire textarea:focus {
+    /* contour quand on clique dedans */
     outline: none;
     border-color: var(--textePrincipal);
 }
@@ -389,6 +395,7 @@ a {
 }
 
 .boutonSoumettre {
+    /* bouton noir classique apple */
     background-color: #2b2b2b;
     color: white;
     padding: 14px;
@@ -454,6 +461,7 @@ a {
 }
 
 .messageChat.utilisateur {
+    /* bulle bleue style iMessage ! */
     background-color: #0071e3;
     color: white;
     align-self: flex-end;
@@ -475,6 +483,7 @@ a {
     border-color: var(--textePrincipal);
 }
 
+/* custom de la scrollbar pr faire + clean */
 #contenuChat::-webkit-scrollbar {
     width: 6px;
 }
