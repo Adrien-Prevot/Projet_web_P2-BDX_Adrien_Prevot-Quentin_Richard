@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <!-- pour bien s'afficher sur téléphone -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'AMAS ZONE - Le leader de l'occasion cassée</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -20,7 +19,7 @@
         <form class="formulaireRecherche">
             <input type="text" placeholder="Rechercher" id="champRecherche">
             <button type="submit" id="boutonRecherche">
-                <img src="../images/boutton%20rechercher.png" alt="recherche" height="30px" width="40px" class="recherche">
+                <img src="../images/boutton%20rechercher.png" alt="recherche" height="30" width="40" class="recherche">
             </button>
         </form>
     </div>
@@ -28,7 +27,7 @@
     <div class="enteteDroite">
         <div class="authentificationUtilisateur"><p>Bonjour</p></div>
         <a href="faq.html" class="boutonFaq" id="lienFaq">
-            <img src="../images/faq.png" alt="" class="icone" id="iconeFaq" width="20px" >
+            <img src="../images/faq.png" alt="" class="icone" id="iconeFaq" width="20">
             <span>FAQ</span>
         </a>
         <a href="contact.html" class="boutonContact">Nous contacter</a>
@@ -39,7 +38,6 @@
 <nav id="sousNavigation">
     <button id="boutonMenu">☰ Tout voir</button>
     <div class="conteneurNavigation">
-        <!-- Liste des catégories clickable pour affiner les recherhces-->
         <ul class="categoriesNavigation">
             <li><a href="page_accueil.html?category=Immobilier">Immobilier</a></li>
             <li><a href="page_accueil.html?category=Décoration">Décoration</a></li>
@@ -52,9 +50,10 @@
 </nav>
 
 <main id="contenuAccueil">
-    <section class="grilleProduits">
+    <h1>Nos articles d'occasion</h1>
+
+    <div class="grilleProduits">
         <article class="carteProduit">
-            <!-- Chaque annonce redirige vers le site avec juste son annonce  -->
             <a href="annonce.html?id=4" class="lienProduit">
                 <div class="imageProduit">
                     <img src="../images/ChaiseTroisPieds.png" alt="Chaise à trois pieds">
@@ -92,7 +91,7 @@
                 </div>
             </a>
         </article>
-    </section>
+    </div>
 </main>
 
 <footer id="piedDePage">
@@ -117,7 +116,6 @@
         </div>
     </div>
 </footer>
-<!-- pour pouvoir cliquer sur les bouton du haut de la page pour choisir les catégoris -->
 <script src="../js/script.js"></script>
 </body>
 </html>
