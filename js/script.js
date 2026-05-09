@@ -1,20 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // on check la categorie dans l'url
     const parametresUrl = new URLSearchParams(window.location.search);
     const filtreCategorie = parametresUrl.get('category');
     const grilleProduits = document.querySelector('.grilleProduits');
     const pagination = document.querySelector('.pagination');
 
     if (filtreCategorie && grilleProduits) {
+        // on charge tout les articles
         fetch('../json/articles.json')
             .then(reponse => reponse.json())
             .then(articles => {
+                // on garde que ce qui nous interesse
                 const articlesFiltres = articles.filter(a => a.categorie === filtreCategorie);
 
+                // on vide la grille avant de rajouter les nveaux trucs
                 grilleProduits.innerHTML = '';
 
+                // on vire la pagination pr l'instant
                 if (pagination) pagination.style.display = 'none';
 
                 if (articlesFiltres.length > 0) {
+                    // on boucle et on injecte le html
                     articlesFiltres.forEach(article => {
                         const carte = `
                             <article class="carteProduit">
@@ -32,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         grilleProduits.innerHTML += carte;
                     });
                 } else {
+                    // si ya rien a afficher
                     grilleProduits.innerHTML = "<p>Aucun article trouvé dans cette catégorie.</p>";
                 }
             })
