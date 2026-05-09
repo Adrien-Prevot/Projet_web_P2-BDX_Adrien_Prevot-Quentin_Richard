@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - L'AMAS ZONE</title>
     <link rel="stylesheet" href="../css/style.css">
+    <!-- on charge le script pr faire marcher le faux bot -->
     <script src="../js/chatbot.js"></script>
 </head>
 <body class="pageContact">
 
 <header id="entetePrincipal">
+    <!-- entete avec nos logos a gauche et a droite -->
     <div class="enteteGauche">
         <a href="page_accueil.html">
             <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="logoPrincipal">
@@ -29,6 +31,7 @@
 <nav id="sousNavigation">
     <button id="boutonMenu">☰ Tout voir</button>
     <div class="conteneurNavigation">
+        <!-- bar de nav avec tout les filtres de base -->
         <ul class="categoriesNavigation">
             <li><a href="page_accueil.html?category=Immobilier">Immobilier</a></li>
             <li><a href="page_accueil.html?category=Décoration">Décoration</a></li>
@@ -42,20 +45,24 @@
 
 <main id="contenuContact">
     <div class="conteneurBoutonRetour">
+        <!-- ptit bouton pr pas rester bloqué ici -->
         <a href="page_accueil.html" class="boutonContact">← Retour à l'accueil</a>
     </div>
     <section class="sectionAPropos conteneurFaq">
         <h1 class="titrePrincipal">Assistant FAQ</h1>
         <div id="fenetreChat">
             <div id="contenuChat">
+                <!-- 1er msg du bot pour acceuillir le gars -->
                 <div class="messageChat robot">Bonjour ! Une question sur nos objets cassés ?</div>
             </div>
+            <!-- c'est le js qui va injecter les boutons ici tkt -->
             <div id="listeQuestions"></div>
         </div>
     </section>
 </main>
 
 <footer id="piedDePage">
+    <!-- le pied de page classic avec les reseaux -->
     <div class="conteneurPiedDePage">
         <nav class="navigationPiedDePage">
             <a href="a_propos.html" class="lienPiedDePage">À propos de nous</a>
