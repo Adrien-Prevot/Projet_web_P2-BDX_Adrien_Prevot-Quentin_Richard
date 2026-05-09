@@ -20,15 +20,15 @@
         <form class="search-form">
             <input type="text" placeholder="Rechercher" id="search-input">
             <button type="submit" id="search-button">
-                <img src="../images/boutton%20rechercher.png" alt="recherche" height="30px" width="40px" class="recherche">
+                <img src="../images/boutton%20rechercher.png" alt="recherche" class="recherche">
             </button>
         </form>
     </div>
 
     <div class="header-right">
         <div class="user-auth"><p>Bonjour</p></div>
-        <a href="faq.html" class="delivery-location" style="text-decoration: none; color: inherit; margin-right: 15px;">
-            <img src="../images/faq.png" alt="" class="icon" width="20px" style="filter: invert(0.5);">
+        <a href="faq.html" class="faq-btn" id="faq-link">
+            <img src="../images/faq.png" alt="" class="icon" id="faq-icon">
             <span>FAQ</span>
         </a>
         <a href="contact.html" class="contact-btn">Nous contacter</a>
@@ -51,10 +51,14 @@
 </nav>
 
 <main id="homepage-content">
+    <div class="back-button-container">
+        <a href="page_accueil.html" class="contact-btn">← Retour à l'accueil</a>
+    </div>
+
     <section class="product-grid">
         <article class="product-card">
             <div class="product-image">
-                <img id="image-annonce" src="" alt="Image de l'annonce" style="display: none;">
+                <img id="image-annonce" src="" alt="Image de l'annonce">
             </div>
             <div class="product-info">
                 <h3 id="titre-annonce">Chargement...</h3>

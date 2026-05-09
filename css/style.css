@@ -1,3 +1,4 @@
+/* Variables et Base */
 :root {
     --bg-main: #ffffff;
     --bg-secondary: #f5f5f7;
@@ -21,7 +22,12 @@ body {
     color: var(--text-primary);
 }
 
-/* Fonctions utiles pour l'en tete*/
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+/* Header */
 #main-header {
     display: flex;
     align-items: center;
@@ -31,22 +37,18 @@ body {
 }
 
 .main-logo { width: 150px; }
-
-.delivery-location {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid var(--border-color);
-    padding: 8px 15px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    cursor: pointer;
-}
+.school-logo { width: 100px; }
 
 .header-center {
     flex: 1;
     max-width: 600px;
     margin: 0 30px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .search-form {
@@ -65,24 +67,42 @@ body {
     outline: none;
 }
 
-.header-right {
+.recherche {
+    height: 30px;
+    width: 40px;
+}
+
+.faq-btn {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
+    border: 1px solid var(--border-color);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+#faq-link {
+    color: inherit;
+    margin-right: 15px;
+}
+
+#faq-icon {
+    width: 20px;
+    filter: invert(0.5);
 }
 
 .contact-btn {
     background-color: #e5e5e5;
     padding: 8px 20px;
     border-radius: 8px;
-    text-decoration: none;
     color: black;
     font-weight: 500;
+    display: inline-block;
 }
 
-.school-logo { width: 100px; }
-
-/* Pour Navigation */
+/* Navigation */
 #sub-nav {
     display: flex;
     align-items: center;
@@ -105,11 +125,11 @@ body {
 .nav-scroll-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 5px 25px;
     flex: 1;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -120,14 +140,16 @@ body {
 }
 
 .nav-categories a {
-    text-decoration: none;
-    color: var(--text-primary);
     font-size: 0.9rem;
 }
 
-/* Grille de Produits */
+/* Grille de produits */
 #homepage-content {
     padding: 60px 40px;
+}
+
+.back-button-container {
+    margin-bottom: 20px;
 }
 
 .product-grid {
@@ -195,22 +217,15 @@ body {
     position: relative;
 }
 
-
 .footer-nav {
     position: absolute;
     left: 0;
 }
 
 .footer-link {
-    text-decoration: none;
-    color: var(--text-primary);
     font-weight: 600;
     font-size: 1rem;
     transition: var(--transition-fast);
-}
-
-.footer-link:hover {
-    text-decoration: underline;
 }
 
 .pagination {
@@ -219,14 +234,12 @@ body {
     gap: 15px;
 }
 
-/* ameliore la vue des liens en bas que j'avais oublié mdrr */
 .pagination a {
     color: black;
-    text-decoration: none;
     padding: 5px 10px;
 }
 
-.pagination a:hover {
+.footer-link:hover, .pagination a:hover {
     text-decoration: underline;
 }
 
@@ -240,7 +253,6 @@ body {
     background: #333;
     color: white;
     border-radius: 5px;
-    text-decoration: none;
 }
 
 .social-links {
@@ -256,9 +268,16 @@ body {
     opacity: 0.7;
 }
 
-/* Pages de contact et a propos pour rester dans la da apple*/
+/* Pages Contact et A propos */
 .contact-page {
     background-color: var(--bg-secondary);
+}
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    text-align: center;
 }
 
 #contact-content {
@@ -275,13 +294,16 @@ body {
     max-width: 500px;
 }
 
-
-.about-section {
+/* Styles communs entre About et Container de Formulaire */
+.about-section, .form-container {
     background-color: var(--bg-main);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-color);
+}
+
+.about-section {
     max-width: 800px;
     text-align: left;
 }
@@ -329,14 +351,6 @@ body {
     margin-bottom: 40px;
 }
 
-.form-container {
-    background-color: var(--bg-main);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border-color);
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -355,8 +369,7 @@ body {
     font-weight: 500;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
     padding: 12px 15px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -365,8 +378,7 @@ body {
     transition: var(--transition-fast);
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus, .form-group textarea:focus {
     outline: none;
     border-color: var(--text-primary);
 }
@@ -393,8 +405,41 @@ body {
     background-color: #000;
 }
 
+/* Chatbot */
 
-/* pour le chatbot */
+
+
+.faq-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+#chat-window {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-content {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#question-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+}
+
 .chat-message {
     padding: 10px 15px;
     border-radius: 15px;
@@ -432,10 +477,10 @@ body {
     border-color: var(--text-primary);
 }
 
-/* un ptit scorllbar qui fait bien son effet */
 #chat-content::-webkit-scrollbar {
     width: 6px;
 }
+
 #chat-content::-webkit-scrollbar-thumb {
     background: #c1c1c1;
     border-radius: 10px;
