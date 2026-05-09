@@ -8,37 +8,37 @@
 </head>
 <body>
 
-<header id="main-header">
-    <div class="header-left">
+<header id="entetePrincipal">
+    <div class="enteteGauche">
         <a href="page_accueil.html">
-            <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="main-logo">
+            <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="logoPrincipal">
         </a>
     </div>
 
-    <div class="header-center">
-        <form class="search-form">
-            <input type="text" placeholder="Rechercher" id="search-input">
-            <button type="submit" id="search-button">
+    <div class="enteteCentre">
+        <form class="formulaireRecherche">
+            <input type="text" placeholder="Rechercher" id="champRecherche">
+            <button type="submit" id="boutonRecherche">
                 <img src="../images/boutton%20rechercher.png" alt="recherche" height="30px" width="40px" class="recherche">
             </button>
         </form>
     </div>
 
-    <div class="header-right">
-        <div class="user-auth"><p>Bonjour</p></div>
-        <a href="faq.html" class="faq-btn" >
-            <img src="../images/faq.png" alt="" class="icon" width="20px" >
+    <div class="enteteDroite">
+        <div class="authentificationUtilisateur"><p>Bonjour</p></div>
+        <a href="faq.html" class="boutonFaq" id="lienFaq">
+            <img src="../images/faq.png" alt="" class="icone" id="iconeFaq" width="20px" >
             <span>FAQ</span>
         </a>
-        <a href="contact.html" class="contact-btn">Nous contacter</a>
-        <img src="../images/efreiLogo.png" alt="Logo EFREI" class="school-logo">
+        <a href="contact.html" class="boutonContact">Nous contacter</a>
+        <img src="../images/efreiLogo.png" alt="Logo EFREI" class="logoEcole">
     </div>
 </header>
 
-<nav id="sub-nav">
-    <button id="menu-toggle">☰ Tout voir</button>
-    <div class="nav-scroll-container">
-        <ul class="nav-categories">
+<nav id="sousNavigation">
+    <button id="boutonMenu">☰ Tout voir</button>
+    <div class="conteneurNavigation">
+        <ul class="categoriesNavigation">
             <li><a href="page_accueil.html?category=Immobilier">Immobilier</a></li>
             <li><a href="page_accueil.html?category=Décoration">Décoration</a></li>
             <li><a href="page_accueil.html?category=Mode">Mode</a></li>
@@ -49,42 +49,42 @@
     </div>
 </nav>
 
-<main id="homepage-content">
-    <section class="product-grid">
-        <article class="product-card">
-            <a href="annonce.html?id=4" class="product-link">
-                <div class="product-image">
+<main id="contenuAccueil">
+    <section class="grilleProduits">
+        <article class="carteProduit">
+            <a href="annonce.html?id=4" class="lienProduit">
+                <div class="imageProduit">
                     <img src="../images/ChaiseTroisPieds.png" alt="Chaise à trois pieds">
                 </div>
-                <div class="product-info">
+                <div class="infosProduit">
                     <h3>Chaise à trois pieds</h3>
-                    <p class="price">15 $</p>
+                    <p class="prix">15 $</p>
                     <p class="description">Idéale pour un projet de bricolage ou pour tester votre sens de l'équilibre. </p>
                 </div>
             </a>
         </article>
 
-        <article class="product-card">
-            <a href="annonce.html?id=5" class="product-link">
-                <div class="product-image">
+        <article class="carteProduit">
+            <a href="annonce.html?id=5" class="lienProduit">
+                <div class="imageProduit">
                     <img src="../images/OrdiVintage.png" alt="Ordinateur des années 90">
                 </div>
-                <div class="product-info">
+                <div class="infosProduit">
                     <h3>Ordinateur des années 90</h3>
-                    <p class="price">80 $</p>
+                    <p class="prix">80 $</p>
                     <p class="description">Ne s'allume plus, mais parfait pour une collection vintage ou un musée personnel.</p>
                 </div>
             </a>
         </article>
 
-        <article class="product-card">
-            <a href="annonce.html?id=6" class="product-link">
-                <div class="product-image">
+        <article class="carteProduit">
+            <a href="annonce.html?id=6" class="lienProduit">
+                <div class="imageProduit">
                     <img src="../images/LivreVide.png" alt="Livre sans pages">
                 </div>
-                <div class="product-info">
+                <div class="infosProduit">
                     <h3>Livre sans pages</h3>
-                    <p class="price">5 $</p>
+                    <p class="prix">5 $</p>
                     <p class="description">Une belle couverture ancienne en cuir véritable, parfaite pour cacher vos petits secrets dans une bibliothèque.</p>
                 </div>
             </a>
@@ -92,21 +92,21 @@
     </section>
 </main>
 
-<footer id="main-footer">
-    <div class="footer-container">
-        <nav class="footer-nav">
-            <a href="a_propos.html" class="footer-link">À propos de nous</a>
+<footer id="piedDePage">
+    <div class="conteneurPiedDePage">
+        <nav class="navigationPiedDePage">
+            <a href="a_propos.html" class="lienPiedDePage">À propos de nous</a>
         </nav>
         <nav class="pagination">
-            <a href="page_accueil.html" class="prev-page">← Previous</a>
-            <ul class="page-numbers">
+            <a href="page_accueil.html" class="pagePrecedente">← Previous</a>
+            <ul class="numerosPage">
                 <li><a href="page_accueil.html">1</a></li>
-                <li class="active"><a href="#">2</a></li>
+                <li class="actif"><a href="#">2</a></li>
                 <li><a href="page3.html">3</a></li>
             </ul>
-            <a href="page3.html" class="next-page">Next →</a>
+            <a href="page3.html" class="pageSuivante">Next →</a>
         </nav>
-        <div class="social-links">
+        <div class="liensSociaux">
             <a href="https://twitter.com"><img src="../images/twitter.png" alt="X"></a>
             <a href="https://instagram.com"><img src="../images/instagram.png" alt="Instagram"></a>
             <a href="https://youtube.com"><img src="../images/youtube.png" alt="YouTube"></a>

@@ -11,21 +11,22 @@ if (articleId) {
             const articleChoisi = articles.find(article => article.id == articleId);
 
             if (articleChoisi) {
-                document.getElementById('titre-annonce').textContent = articleChoisi.titre;
-                document.getElementById('prix-annonce').textContent = articleChoisi.prix;
-                document.getElementById('description-annonce').textContent = articleChoisi.description;
+                // Remplacement des IDs avec tirets par les versions camelCase
+                document.getElementById('titreAnnonce').textContent = articleChoisi.titre;
+                document.getElementById('prixAnnonce').textContent = articleChoisi.prix;
+                document.getElementById('descriptionAnnonce').textContent = articleChoisi.description;
 
-                const imgElement = document.getElementById('image-annonce');
+                const imgElement = document.getElementById('imageAnnonce');
                 imgElement.src = articleChoisi.image;
                 imgElement.alt = articleChoisi.titre;
                 imgElement.style.display = 'block';
             } else {
-                document.getElementById('titre-annonce').textContent = "Annonce introuvable.";
+                document.getElementById('titreAnnonce').textContent = "Annonce introuvable.";
             }
         })
         .catch(() => {
-            document.getElementById('titre-annonce').textContent = "Erreur de chargement.";
+            document.getElementById('titreAnnonce').textContent = "Erreur de chargement.";
         });
 } else {
-    document.getElementById('titre-annonce').textContent = "Aucun article sélectionné.";
+    document.getElementById('titreAnnonce').textContent = "Aucun article sélectionné.";
 }

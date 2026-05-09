@@ -1,13 +1,13 @@
 /* Variables et Base */
 :root {
-    --bg-main: #ffffff;
-    --bg-secondary: #f5f5f7;
-    --text-primary: #1d1d1f;
-    --text-secondary: #86868b;
-    --border-color: #d2d2d7;
-    --accent-color: #0071e3;
-    --radius-card: 12px;
-    --transition-fast: 0.2s ease;
+    --fondPrincipal: #ffffff;
+    --fondSecondaire: #f5f5f7;
+    --textePrincipal: #1d1d1f;
+    --texteSecondaire: #86868b;
+    --couleurBordure: #d2d2d7;
+    --couleurAccentuation: #0071e3;
+    --rayonCarte: 12px;
+    --transitionRapide: 0.2s ease;
 }
 
 * {
@@ -18,40 +18,40 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: var(--bg-main);
-    color: var(--text-primary);
+    background-color: var(--fondPrincipal);
+    color: var(--textePrincipal);
 }
 
 a {
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--textePrincipal);
 }
 
 /* Header */
-#main-header {
+#entetePrincipal {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--couleurBordure);
 }
 
-.main-logo { width: 150px; }
-.school-logo { width: 100px; }
+.logoPrincipal { width: 150px; }
+.logoEcole { width: 100px; }
 
-.header-center {
+.enteteCentre {
     flex: 1;
     max-width: 600px;
     margin: 0 30px;
 }
 
-.header-right {
+.enteteDroite {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.search-form {
+.formulaireRecherche {
     display: flex;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -59,7 +59,7 @@ a {
     align-items: center;
 }
 
-#search-input {
+#champRecherche {
     flex: 1;
     border: none;
     background: transparent;
@@ -72,28 +72,28 @@ a {
     width: 40px;
 }
 
-.faq-btn {
+.boutonFaq {
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--couleurBordure);
     padding: 8px 15px;
     border-radius: 8px;
     font-size: 0.85rem;
     cursor: pointer;
 }
 
-#faq-link {
+#lienFaq {
     color: inherit;
     margin-right: 15px;
 }
 
-#faq-icon {
+#iconeFaq {
     width: 20px;
     filter: invert(0.5);
 }
 
-.contact-btn {
+.boutonContact {
     background-color: #e5e5e5;
     padding: 8px 20px;
     border-radius: 8px;
@@ -103,15 +103,15 @@ a {
 }
 
 /* Navigation */
-#sub-nav {
+#sousNavigation {
     display: flex;
     align-items: center;
     padding: 10px 40px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--couleurBordure);
     gap: 40px;
 }
 
-#menu-toggle {
+#boutonMenu {
     background: none;
     border: none;
     font-size: 1rem;
@@ -122,7 +122,7 @@ a {
     gap: 10px;
 }
 
-.nav-scroll-container {
+.conteneurNavigation {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,99 +133,99 @@ a {
     gap: 20px;
 }
 
-.nav-categories {
+.categoriesNavigation {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-.nav-categories a {
+.categoriesNavigation a {
     font-size: 0.9rem;
 }
 
 /* Grille de produits */
-#homepage-content {
+#contenuAccueil {
     padding: 60px 40px;
 }
 
-.back-button-container {
+.conteneurBoutonRetour {
     margin-bottom: 20px;
 }
 
-.product-grid {
+.grilleProduits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.product-card {
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-card);
+.carteProduit {
+    border: 1px solid var(--couleurBordure);
+    border-radius: var(--rayonCarte);
     overflow: hidden;
-    transition: var(--transition-fast);
+    transition: var(--transitionRapide);
     padding-bottom: 20px;
 }
 
-.product-card:hover {
+.carteProduit:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-.product-image, .product-image-placeholder {
+.imageProduit, .espaceImageProduit {
     height: 220px;
     background-color: #f0f0f0;
 }
 
-.product-image img {
+.imageProduit img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.product-info {
+.infosProduit {
     padding: 20px;
 }
 
-.product-info h3 {
+.infosProduit h3 {
     font-size: 1.4rem;
     margin-bottom: 5px;
 }
 
-.price {
+.prix {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .description {
-    color: var(--text-secondary);
+    color: var(--texteSecondaire);
     font-size: 0.95rem;
     line-height: 1.4;
 }
 
 /* Footer et Pagination */
-#main-footer {
+#piedDePage {
     padding: 40px;
-    border-top: 1px solid var(--border-color);
-    background-color: var(--bg-main);
+    border-top: 1px solid var(--couleurBordure);
+    background-color: var(--fondPrincipal);
 }
 
-.footer-container {
+.conteneurPiedDePage {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.footer-nav {
+.navigationPiedDePage {
     position: absolute;
     left: 0;
 }
 
-.footer-link {
+.lienPiedDePage {
     font-weight: 600;
     font-size: 1rem;
-    transition: var(--transition-fast);
+    transition: var(--transitionRapide);
 }
 
 .pagination {
@@ -239,40 +239,40 @@ a {
     padding: 5px 10px;
 }
 
-.footer-link:hover, .pagination a:hover {
+.lienPiedDePage:hover, .pagination a:hover {
     text-decoration: underline;
 }
 
-.page-numbers {
+.numerosPage {
     display: flex;
     list-style: none;
     gap: 10px;
 }
 
-.page-numbers li.active a {
+.numerosPage li.actif a {
     background: #333;
     color: white;
     border-radius: 5px;
 }
 
-.social-links {
+.liensSociaux {
     position: absolute;
     right: 0;
     display: flex;
     gap: 15px;
 }
 
-.social-links img {
+.liensSociaux img {
     height: 24px;
     filter: grayscale(1);
     opacity: 0.7;
 }
 
 /* Pages Contact et A propos */
-.contact-page {
-    background-color: var(--bg-secondary);
+.pageContact {
+    background-color: var(--fondSecondaire);
 }
-.main-title {
+.titrePrincipal {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 10px;
@@ -280,7 +280,7 @@ a {
     text-align: center;
 }
 
-#contact-content {
+#contenuContact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,107 +288,107 @@ a {
     min-height: calc(100vh - 250px);
 }
 
-.contact-section {
+.sectionContact {
     text-align: center;
     width: 100%;
     max-width: 500px;
 }
 
 /* Styles communs entre About et Container de Formulaire */
-.about-section, .form-container {
-    background-color: var(--bg-main);
+.sectionAPropos, .conteneurFormulaire {
+    background-color: var(--fondPrincipal);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--couleurBordure);
 }
 
-.about-section {
+.sectionAPropos {
     max-width: 800px;
     text-align: left;
 }
 
-.about-section p {
-    color: var(--text-secondary);
+.sectionAPropos p {
+    color: var(--texteSecondaire);
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.about-members {
+.membresAPropos {
     display: flex;
     gap: 20px;
     margin-top: 30px;
 }
 
-.member-card {
+.carteMembre {
     flex: 1;
     padding: 20px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--couleurBordure);
     border-radius: 8px;
     background-color: #f9f9f9;
 }
 
-.member-card h3 {
+.carteMembre h3 {
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
 
-.member-card p {
+.carteMembre p {
     font-size: 0.9rem;
     margin-bottom: 0;
 }
 
-.main-title {
+.titrePrincipal {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 10px;
     letter-spacing: -1px;
 }
 
-.subtitle {
+.sousTitre {
     font-size: 1.8rem;
-    color: var(--text-primary);
+    color: var(--textePrincipal);
     margin-bottom: 40px;
 }
 
-.contact-form {
+.formulaireContact {
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: left;
 }
 
-.form-group {
+.groupeFormulaire {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.form-group label {
+.groupeFormulaire label {
     font-size: 0.95rem;
     font-weight: 500;
 }
 
-.form-group input, .form-group textarea {
+.groupeFormulaire input, .groupeFormulaire textarea {
     padding: 12px 15px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--couleurBordure);
     border-radius: 8px;
     font-size: 1rem;
     background-color: transparent;
-    transition: var(--transition-fast);
+    transition: var(--transitionRapide);
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.groupeFormulaire input:focus, .groupeFormulaire textarea:focus {
     outline: none;
-    border-color: var(--text-primary);
+    border-color: var(--textePrincipal);
 }
 
-.form-group textarea {
+.groupeFormulaire textarea {
     min-height: 120px;
     resize: vertical;
 }
 
-.submit-btn {
+.boutonSoumettre {
     background-color: #2b2b2b;
     color: white;
     padding: 14px;
@@ -398,24 +398,22 @@ a {
     font-weight: 600;
     cursor: pointer;
     margin-top: 10px;
-    transition: var(--transition-fast);
+    transition: var(--transitionRapide);
 }
 
-.submit-btn:hover {
+.boutonSoumettre:hover {
     background-color: #000;
 }
 
 /* Chatbot */
 
-
-
-.faq-container {
+.conteneurFaq {
     max-width: 600px;
     width: 100%;
 }
 
-#chat-window {
-    background: var(--bg-secondary);
+#fenetreChat {
+    background: var(--fondSecondaire);
     border-radius: 12px;
     padding: 20px;
     height: 400px;
@@ -423,7 +421,7 @@ a {
     flex-direction: column;
 }
 
-#chat-content {
+#contenuChat {
     flex: 1;
     overflow-y: auto;
     display: flex;
@@ -431,16 +429,16 @@ a {
     gap: 10px;
 }
 
-#question-list {
+#listeQuestions {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 15px;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--couleurBordure);
     padding-top: 10px;
 }
 
-.chat-message {
+.messageChat {
     padding: 10px 15px;
     border-radius: 15px;
     max-width: 80%;
@@ -448,40 +446,40 @@ a {
     line-height: 1.4;
 }
 
-.chat-message.bot {
+.messageChat.robot {
     background-color: #e5e5ea;
     color: black;
     align-self: flex-start;
     border-bottom-left-radius: 2px;
 }
 
-.chat-message.user {
+.messageChat.utilisateur {
     background-color: #0071e3;
     color: white;
     align-self: flex-end;
     border-bottom-right-radius: 2px;
 }
 
-.chat-question-btn {
+.boutonQuestionChat {
     background: white;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--couleurBordure);
     padding: 8px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
     cursor: pointer;
-    transition: var(--transition-fast);
+    transition: var(--transitionRapide);
 }
 
-.chat-question-btn:hover {
+.boutonQuestionChat:hover {
     background-color: #f5f5f7;
-    border-color: var(--text-primary);
+    border-color: var(--textePrincipal);
 }
 
-#chat-content::-webkit-scrollbar {
+#contenuChat::-webkit-scrollbar {
     width: 6px;
 }
 
-#chat-content::-webkit-scrollbar-thumb {
+#contenuChat::-webkit-scrollbar-thumb {
     background: #c1c1c1;
     border-radius: 10px;
 }

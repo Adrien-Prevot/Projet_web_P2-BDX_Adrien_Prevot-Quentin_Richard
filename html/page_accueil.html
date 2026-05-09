@@ -8,37 +8,37 @@
 </head>
 <body>
 
-<header id="main-header">
-    <div class="header-left">
+<header id="entetePrincipal">
+    <div class="enteteGauche">
         <a href="page_accueil.html">
-            <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="main-logo">
+            <img src="../images/logo.png" alt="Logo L'AMAS ZONE" class="logoPrincipal">
         </a>
     </div>
 
-    <div class="header-center">
-        <form class="search-form">
-            <input type="text" placeholder="Rechercher" id="search-input">
-            <button type="submit" id="search-button">
+    <div class="enteteCentre">
+        <form class="formulaireRecherche">
+            <input type="text" placeholder="Rechercher" id="champRecherche">
+            <button type="submit" id="boutonRecherche">
                 <img src="../images/boutton%20rechercher.png" alt="recherche" height="30px" width="40px" class="recherche">
             </button>
         </form>
     </div>
 
-    <div class="header-right">
-        <div class="user-auth"><p>Bonjour</p></div>
-        <a href="faq.html" class="faq-btn" style="text-decoration: none; color: inherit; margin-right: 15px;">
-            <img src="../images/faq.png" alt="" class="icon" width="20px" style="filter: invert(0.5);">
+    <div class="enteteDroite">
+        <div class="authentificationUtilisateur"><p>Bonjour</p></div>
+        <a href="faq.html" class="boutonFaq" id="lienFaq" style="text-decoration: none; color: inherit; margin-right: 15px;">
+            <img src="../images/faq.png" alt="" class="icone" id="iconeFaq" width="20px" style="filter: invert(0.5);">
             <span>FAQ</span>
         </a>
-        <a href="contact.html" class="contact-btn">Nous contacter</a>
-        <img src="../images/efreiLogo.png" alt="Logo EFREI" class="school-logo">
+        <a href="contact.html" class="boutonContact">Nous contacter</a>
+        <img src="../images/efreiLogo.png" alt="Logo EFREI" class="logoEcole">
     </div>
 </header>
 
-<nav id="sub-nav">
-    <button id="menu-toggle">☰ Tout voir</button>
-    <div class="nav-scroll-container">
-        <ul class="nav-categories">
+<nav id="sousNavigation">
+    <button id="boutonMenu">☰ Tout voir</button>
+    <div class="conteneurNavigation">
+        <ul class="categoriesNavigation">
             <li><a href="page_accueil.html?category=Immobilier">Immobilier</a></li>
             <li><a href="page_accueil.html?category=Décoration">Décoration</a></li>
             <li><a href="page_accueil.html?category=Mode">Mode</a></li>
@@ -49,64 +49,64 @@
     </div>
 </nav>
 
-<main id="homepage-content">
-    <section class="product-grid">
-        <article class="product-card">
-            <a href="annonce.html?id=1" class="product-link">
-            <div class="product-image">
-                <img src="../images/MaisonAbandonneeStyle1940.png" alt="Maison abandonnée">
-            </div>
-            <div class="product-info">
-                <h3>Maison abandonnée</h3>
-                <p class="price">1000 $</p>
-                <p class="description">Maison très belle plus utilisée depuis près de 40 ans.</p>
-            </div>
+<main id="contenuAccueil">
+    <section class="grilleProduits">
+        <article class="carteProduit">
+            <a href="annonce.html?id=1" class="lienProduit">
+                <div class="imageProduit">
+                    <img src="../images/MaisonAbandonneeStyle1940.png" alt="Maison abandonnée">
+                </div>
+                <div class="infosProduit">
+                    <h3>Maison abandonnée</h3>
+                    <p class="prix">1000 $</p>
+                    <p class="description">Maison très belle plus utilisée depuis près de 40 ans.</p>
+                </div>
             </a>
         </article>
 
-        <article class="product-card">
-            <a href="annonce.html?id=2" class="product-link">
-            <div class="product-image">
-                <img src="../images/VeloRoueSelle.png" alt="Vélo sans cadre">
-            </div>
-            <div class="product-info">
-                <h3>Vélo sans cadre</h3>
-                <p class="price">50 $</p>
-                <p class="description">Pour du recyclage et une jolie déco.</p>
-            </div>
+        <article class="carteProduit">
+            <a href="annonce.html?id=2" class="lienProduit">
+                <div class="imageProduit">
+                    <img src="../images/VeloRoueSelle.png" alt="Vélo sans cadre">
+                </div>
+                <div class="infosProduit">
+                    <h3>Vélo sans cadre</h3>
+                    <p class="prix">50 $</p>
+                    <p class="description">Pour du recyclage et une jolie déco.</p>
+                </div>
             </a>
         </article>
 
-        <article class="product-card">
-            <a href="annonce.html?id=3" class="product-link">
-            <div class="product-image">
-                <img src="../images/BottesTrouees.png" alt="Bottes Trouées">
-            </div>
-            <div class="product-info">
-                <h3>Crocs allongé</h3>
-                <p class="price">25 $</p>
-                <p class="description">Pour du recyclage et de jolies crocs.</p>
-            </div>
+        <article class="carteProduit">
+            <a href="annonce.html?id=3" class="lienProduit">
+                <div class="imageProduit">
+                    <img src="../images/BottesTrouees.png" alt="Bottes Trouées">
+                </div>
+                <div class="infosProduit">
+                    <h3>Crocs allongé</h3>
+                    <p class="prix">25 $</p>
+                    <p class="description">Pour du recyclage et de jolies crocs.</p>
+                </div>
             </a>
         </article>
     </section>
 </main>
 
-<footer id="main-footer">
-    <div class="footer-container">
-        <nav class="footer-nav">
-            <a href="a_propos.html" class="footer-link">À propos de nous</a>
+<footer id="piedDePage">
+    <div class="conteneurPiedDePage">
+        <nav class="navigationPiedDePage">
+            <a href="a_propos.html" class="lienPiedDePage">À propos de nous</a>
         </nav>
         <nav class="pagination">
-            <a href="#" class="prev-page">← Previous</a>
-            <ul class="page-numbers">
-                <li class="active"><a href="#">1</a></li>
+            <a href="#" class="pagePrecedente">← Previous</a>
+            <ul class="numerosPage">
+                <li class="actif"><a href="#">1</a></li>
                 <li><a href="../html/page2.html">2</a></li>
                 <li><a href="../html/page3.html">3</a></li>
             </ul>
-            <a href="../html/page2.html" class="next-page">Next →</a>
+            <a href="../html/page2.html" class="pageSuivante">Next →</a>
         </nav>
-        <div class="social-links">
+        <div class="liensSociaux">
             <a href="https://twitter.com"><img src="../images/twitter.png" alt="X"></a>
             <a href="https://instagram.com"><img src="../images/instagram.png" alt="Instagram"></a>
             <a href="https://youtube.com"><img src="../images/youtube.png" alt="YouTube"></a>
