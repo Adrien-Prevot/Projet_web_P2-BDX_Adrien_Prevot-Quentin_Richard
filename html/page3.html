@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <!-- pour bien s'afficher sur téléphone -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'AMAS ZONE - Le leader de l'occasion cassée</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -20,7 +19,7 @@
         <form class="formulaireRecherche">
             <input type="text" placeholder="Rechercher" id="champRecherche">
             <button type="submit" id="boutonRecherche">
-                <img src="../images/boutton%20rechercher.png" alt="recherche" height="30px" width="40px" class="recherche">
+                <img src="../images/boutton%20rechercher.png" alt="recherche" height="30" width="40" class="recherche">
             </button>
         </form>
     </div>
@@ -28,7 +27,7 @@
     <div class="enteteDroite">
         <div class="authentificationUtilisateur"><p>Bonjour</p></div>
         <a href="faq.html" class="boutonFaq" >
-            <img src="../images/faq.png" alt="" class="icone" width="20px" >
+            <img src="../images/faq.png" alt="" class="icone" width="20" >
             <span>FAQ</span>
         </a>
         <a href="contact.html" class="boutonContact">Nous contacter</a>
@@ -39,7 +38,6 @@
 <nav id="sousNavigation">
     <button id="boutonMenu">☰ Tout voir</button>
     <div class="conteneurNavigation">
-        <!-- Liste des catégories clickable pour affiner les recherhces-->
         <ul class="categoriesNavigation">
             <li><a href="page_accueil.html?category=Immobilier">Immobilier</a></li>
             <li><a href="page_accueil.html?category=Décoration">Décoration</a></li>
@@ -52,7 +50,9 @@
 </nav>
 
 <main id="contenuAccueil">
+    <h1 style="display: none;">L'AMAS ZONE</h1>
     <section class="grilleProduits">
+        <h2 style="display: none;">Nos produits</h2>
         <article class="carteProduit">
             <a href="annonce.html?id=7" class="lienProduit">
                 <div class="imageProduit">
@@ -65,7 +65,6 @@
                 </div>
             </a>
         </article>
-        <!-- Chaque annonce redirige vers le site avec juste son annonce  -->
         <article class="carteProduit">
             <a href="annonce.html?id=8" class="lienProduit">
                 <div class="imageProduit">
@@ -116,7 +115,6 @@
         </div>
     </div>
 </footer>
-<!-- pour pouvoir cliquer sur les bouton du haut de la page pour choisir les catégoris -->
 <script src="../js/script.js"></script>
 </body>
 </html>
